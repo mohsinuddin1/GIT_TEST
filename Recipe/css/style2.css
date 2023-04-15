@@ -1,0 +1,29 @@
+html{
+    background: rgb(0, 0, 0);
+    
+}
+@keyframes intro {
+  100% {bottom: 0};
+  from {opacity: 0} to {opacity: 1};
+}
+#head{
+  
+    font-size: 5vw;
+    text-align: center;
+    color:rgb(12, 139, 101);
+    animation: intro 2s forwards; 
+
+    
+   
+}
+
+#body
+{
+  
+    color: rgb(12,139,101);
+}
+div1{
+ 
+  /*background-color: rgb(40, 38, 38);*/
+  
+}
