@@ -1,0 +1,30 @@
+html{
+    background-color: black;
+    color: aqua;
+}
+#head{
+    text-align: center;
+}
+.container{
+    display: flex;
+    
+    height: 300px;
+   
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+
+.home{
+    flex: 1 1 200px;
+}
+.login{
+    flex: 10 1 200px;
+}
+.container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+  }
