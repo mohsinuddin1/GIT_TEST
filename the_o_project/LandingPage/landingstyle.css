@@ -1,0 +1,108 @@
+body {
+    background-image: url("images/night.jpg");
+    background-repeat: repeat;
+    color:white;
+    margin: 0;
+    padding: 0;
+    
+  }
+a{
+    text-decoration: none;
+    font-size: x-large;
+    color: white;
+}
+.logo>img{
+  width: 250px;
+  height: 100px;
+}
+.header{
+  display:flex;
+  justify-content: space-between;
+}
+
+.right{
+  display: flex;
+  gap: 16px;
+  padding: 8px;
+  
+}
+
+
+
+
+.welcome {
+  padding: 13em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
+
+
+.welcome>left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.welcome>right {
+  flex-shrink: 0;
+  width: 50%;
+}
+.hero {
+  color: #F9FAF8;
+  font-weight: 900;
+  font-size: 48px;
+}
+button {
+  padding: 7px 1em;
+  width: 120px;
+  background-color: #4d2151;
+  border-radius: 8px;
+}
+.welcome button {
+  border: none;
+}
+.pic{
+  background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 215px;
+    width: 350px;
+}
+
+
+
+.container{
+  display: flex;
+  justify-content: center;
+  
+  width: 100%;
+  height: 250px;
+  
+  background: fixed;
+  background-color: grey;
+  align-items: flex-end;
+   
+}
+
+
+
+.info>img {
+  width: 200px;
+  height: 200px;
+}
+.text{
+  font-size:20px;
+
+}
+.title {
+  font-size: 36px;
+  font-weight: 900;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
