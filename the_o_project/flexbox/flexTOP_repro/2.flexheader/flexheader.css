@@ -1,0 +1,40 @@
+.container{
+    background-color: bisque;
+    display: flex;
+    justify-content:space-between;
+    padding: 8px;
+}
+.container>logo{
+    text-align: center;
+}
+.logo{
+     font-size: 48px;
+  font-weight: 900;
+  color: tomato;
+  background: white;
+  padding: 4px 32px;
+}
+.right>div,.left>div{
+    width: 80px;
+    height: 30px;
+   text-align: center;
+background-color: white;
+   font-weight: bold;
+   padding:0;
+  
+   color: blue;
+    font-size:22px;
+    
+   
+   
+}
+.right{
+    display: flex;
+    gap: 8px;
+    align-self: center;
+}
+.left{
+    display: flex;
+    gap: 8px;
+    align-self: center;
+}
