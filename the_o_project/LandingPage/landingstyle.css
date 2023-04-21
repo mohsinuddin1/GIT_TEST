@@ -1,3 +1,6 @@
+html{
+  font-size: 62.5%;
+}
 *{
   margin: 0;
     padding: 0;
@@ -17,28 +20,28 @@ text-shadow:0px 0px 5px black,
   }
 a{
     text-decoration: none;
-    font-size: x-large;
+    font-size: 2.4rem;
     color: white;
 }
 .logo>img{
-  width: 250px;
-  height: 80px;
+  width: 25rem;
+  height: 8rem;
 }
 .header{
   display:flex;
   justify-content: space-between;
 }
 p{
-  width: 350px;
+  width: 35rem;
 }
 .hero{
-  width: 300px;
+  width: 30rem;
   margin-bottom: 0;
 }
 .right{
   display: flex;
-  gap: 16px;
-  padding: 8px;
+  gap: 1.6rem;
+  padding: 0.8rem;
   
 }
 
@@ -46,12 +49,13 @@ p{
 
 
 .welcome {
-  padding: 13em 0;
+  padding: 20em 0;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2em;
-  padding-right: 400px;
+  padding-right: 50rem;
+  flex: 1;
 }
 
 
@@ -65,13 +69,16 @@ p{
 .hero {
   color: #F9FAF8;
   font-weight: 900;
-  font-size: 48px;
+  font-size: 4.8rem;
+}
+.desc{
+  font-size: 1.6rem;
 }
 button {
-  padding: 7px 1em;
-  width: 120px;
+  padding: 0.7rem 1em;
+  width: 12rem;
   background-color: #4d2151;
-  border-radius: 8px;
+  border-radius: 0.8rem;
 }
 .welcome button {
   border: none;
@@ -95,38 +102,38 @@ button {
 .container{
   display: flex;
   justify-content: center;
-  height: 250px;
+  height: 25rem;
   background: fixed;
   background-color: rgb(33, 27, 27);
-  
-  gap: 48px;
-  padding-bottom:80px; 
+  flex: auto;
+  gap: 4.8rem;
+  padding-bottom:8rem; 
 }
 
 
 
 .info>img {
-  width: 200px;
-  height: 200px;
-  border: 4px solid rgb(0, 0, 255);
-  border-radius: 8px;
+  width: 20rem;
+  height: 20rem;
+  border: 0.4rem solid rgb(0, 0, 255);
+  border-radius: 0.8rem;
 }
 .text{
-  font-size:20px;
-  width:200px;
+  font-size:2rem;
+  width:20rem;
 
 }
 .title {
-  font-size: 36px;
+  font-size: 3.6rem;
   font-weight: 900;
-  margin-top: 30px;
-  padding: 30px;
+  margin-top: 17rem;
+  padding: 3rem;
   display: flex;
   justify-content: center;
   background-color:  rgb(33, 27, 27);
 }
 .quote{
-  width:800px;
+  width:100rem;
  
 }
 .quotation{
@@ -134,8 +141,9 @@ button {
   flex-direction: column;
  align-items: center;
  background: url(images/nature-3194001_1920.jpg) no-repeat center center fixed;
- padding: 150px;
- 
+ padding: 15rem;
+ flex: auto;
+ font-size: 2rem;
 }
 
 .container2{
@@ -143,36 +151,56 @@ button {
   justify-content: center;
   
   width: 100%;
-  height: 220px;
+  height: 22rem;
   
   background: fixed;
   background-color: rgb(33, 27, 27);
   align-items: flex-end;
-  gap: 48px;
-  padding-bottom: 80px;
-  
-  margin-bottom: 80px;
+  gap: 4.8rem;
+  padding-bottom: 8rem;
+
+  margin-bottom: 8rem;
    
 }
 .innerc{
-  border: 6px solid rgb(15, 15, 168);
-  padding: 40px;
-  border-radius: 10px;
+  border: 0.6rem solid rgb(15, 15, 168);
+  padding: 4rem;
+  border-radius: 1rem;
   display: flex;
+ font-size: 1.7rem;
   
 
 }
 button.innerbutt{
-  width: 80px;
-  height: 30px;
+  width: 8rem;
+  height: 3rem;
   align-self: center;
   border: none;
   background-color:rgb(22, 128, 128);
   font-weight: bold;
   color: white;
+  flex: auto;
+}
+h{
+  font-size: 2.5rem;
 }
 .footer2{
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex: 1;
+  font-size: 1.5rem;
+}
+
+@media(max-width:998px)
+{
+  html{
+    font-size:55%;
+  }
+}
+@media(max-width:768px)
+{
+  html{
+    font-size:45%;
+  }
 }
