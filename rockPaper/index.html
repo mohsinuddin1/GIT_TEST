@@ -1,14 +1,64 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <title>Rock Paper</title>
+  <link rel="stylesheet" href="rockpaper.css" />
 </head>
+
 <body>
-    <h1>ROCK PAPER SCISSOR</h1>
-  <script src="./rockpaper.js">
-    // Your JavaScript goes here!
-    console.log("Hello, World!")
-  </script>
+  <header class="header">
+    <h1 class="title">ROCK PAPER SCISSORS</h1>
+  </header>
+  <main class="main">
+    <div class="scoreboard">
+      <h2 class="score-info" id="scoreInfo">Choose your weapon</h2>
+      <h3 class="score-message" id="scoreMessage">
+        First to score 5 points wins the game
+      </h3>
+      <div class="scores-container">
+        <div class="score-box">
+          <div class="sign" id="playerSign">❔</div>
+          <p class="score" id="playerScore">Player: 0</p>
+        </div>
+        <div class="score-box">
+          <div class="sign" id="computerSign">❔</div>
+          <p class="score" id="computerScore">Computer: 0</p>
+        </div>
+      </div>
+    </div>
+    <div class="buttons">
+      <button class="btn btn-square" id="rockBtn">
+        <div class="sign">✊</div>
+      </button>
+      <button class="btn btn-square" id="paperBtn">
+        <div class="sign">✋</div>
+      </button>
+      <button class="btn btn-square" id="scissorsBtn">
+        <div class="sign">✌</div>
+      </button>
+    </div>
+  </main>
+  <footer class="footer">
+    <p>
+      Copyright ©
+      <script>
+        document.write(new Date().getFullYear())
+      </script>
+      Made by Md Mohsin Uddin 
+    </p>
+    <a href="https://github.com/mohsinuddin1" target="_blank">
+      <i class="fab fa-github">❤️</i
+    ></a>
+  </footer>
+  <div class="modal" id="endgameModal">
+    <p class="modal-title" id="endgameMsg"></p>
+    <button class="btn btn-restart" id="restartBtn">Play again</button>
+  </div>
+  <div class="overlay" id="overlay"></div>
+    <script src="./rockpaper.js">
+    </script>
 </body>
+
 </html>
