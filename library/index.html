@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="./library.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo" id="logo" >Library</div>
+        <button class="login" id="login" type="button">Log in</div>
+    </header>
+    <div class="container">
+        <button class="addBookBtn" id="addBookBtn" type="button">+Add Book</button>
+        <div class="books-grid" id="booksGrid"></div>
+    </div>
+    <footer class="footer">
+        <p>Copyright © 2023 Mohsin Uddin</p>
+    </footer>
+    <div class="modal" id="addBookModal">
+        <form class="add-book-form" id="addBookForm">
+            <h3>Add new book</h3>
+            <input class="input" type="text" id="title" placeholder="Title" required maxlength="100" />
+            <p class="error-msg" id="errorMsg"></p>
+            <input class="input" type="text" id="author" placeholder="Author" required maxlength="100" />
+            <input class="input" type="number" id="pages" placeholder="Pages" required maxlength="10000" />
+            <div class="is-read">
+                <label for="is-read">Have you read it?</label>
+                <input class="checkbox" type="checkbox" id="isRead" />
+              </div>
+              <button class="btn btn-light-green" type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <script src="./library.js"></script>
+</body>
+</html>

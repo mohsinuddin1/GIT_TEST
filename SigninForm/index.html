@@ -10,14 +10,20 @@
 
 <body>
     <div class="bodyc">
-        <div class="bgImage"></div>
+        <div class="bgImage">
+            <div class="img-block">
+                <div class="logo">
+                </div>
+                <p>SIGN-UP FORM</p>
+        </div>
+        </div>
         <div class="container">
             <div class="header">
-                <h1>This is not a real online service!
+                <h2>This is not a real online service!
                     You know you need something like this in your life to help you realize your deepest dreams. Sign up
                     now to get started.
-                </h1>
-                <h1> You know you want to.</h1>
+                </h2>
+                <h2> You know you want to.</h2>
             </div>
 
             <div class="formcont">
@@ -25,23 +31,32 @@
                 <form id="my-form">
                     <div class="col1">
                     <label for="firstname">First Name</label>
-                        <input type="text" name="firstname" required>
+                        <input type="text" id='fnam' name="firstname" required>
+                        <div id='fnamerror' class='error'></div>
                     
-                    <label for="lastname">Last Name</label>
-                        <input type="text" name="lastname" required>
+                    <label for="lastname">Last Name
+                        <input type="text" id="lnam" name="lastname" required>
+                        <div id='lnamerror' class='error'></div>
+                    </label>
                  
-                    <label for="email">Email</label>
-                        <input type="email" name="email" required>
+                    <label for="email">Email
+                        <input type="email" name="email" id="email" placeholder="example@email.com" required>
+                        <div id='emailerror' class='error'></div>
+                    </label>
                     </div>
                     <div class="col2">
-                    <label for="phno">Phone Number</label>
-                        <input type="number" name="phno" required>
-                   
-                    <label for="password">Password </label>
-                        <input type="password" name="password" required>
-                    
-                    <label for="confirmPassword">Confirm Password</label>
-                        <input type="password" name="confirmpassword" required>
+                    <label for="phno">Phone Number
+                        <input type="number" id="phno" name="phno" required pattern="[0-9]{10}">
+                        <div id='tel-error' class='error'></div>
+                    </label>
+                    <label for="password">Password 
+                        <input type="password" id="pw" name="password" required>
+                        <div id='pwError' class='error'></div>
+                    </label>
+                    <label for="confirmPassword">Confirm Password
+                        <input type="password" id="pwC" name="confirmpassword" required>
+                        <div id='pwCError' class='error'></div>
+                    </label>
                     </div>
                 </form>
             </div>
@@ -51,6 +66,8 @@
             </div>
         </div>
     </div>
+    <script src="./signUp.js">
+    </script>
 </body>
 
 </html>

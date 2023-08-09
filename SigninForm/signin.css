@@ -1,6 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+  }
+html{
+    width: 100%;
+    height:100%;
+    overflow: hidden;
+}
 .bodyc{
 display: flex;
 flex-direction: row;
+
+background-color:rgb(36, 33, 33);
 }
 .bgImage{
     flex-grow: 1;
@@ -20,19 +33,28 @@ flex-direction: row;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: rgb(31, 111, 126);
+    background-color: black;
     padding:20px 10px 80px 20px ;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.123);
     
+}
+.col1{
+    flex-flow: row wrap;
+}
+.header{
+    width:65vw;
+    height:25vh;
+    min-width:300px;
+}
+.header h2{
+    margin-top: 40px;
 }
 form{
 display: flex;
  gap: 4rem;
  
 }
-col1,col2{
 
-}
 label,input {
 display: flex;
 flex-direction: column;
@@ -41,13 +63,55 @@ flex-direction: column;
 }
 input{
     width: 15rem;
-    margin-bottom: 15px;
+   
     font-family: customFontBold;
     padding: 5px 10px;
     border-radius: 5px;
     border: 1px solid rgb(224, 224, 224);
     font-size: .9rem;
     margin-top: 3px;
+    background-color:rgb(36, 33, 33);
+}
+input:focus {
+    border: none;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.342);
+    outline: none;
+  }
+  .error{
+   color: red;
+   font-size: 12px;
+    margin-bottom: 15px;
+ 
+  }
+input:invalid:focus {
+    border: 2px solid rgb(255, 69, 100)
+  }
+  
+  input:focus:valid {
+    border: rgb(0, 183, 255) 2px solid;
+    
+  }
+.img-block{
+    background-color: rgba(0, 0, 0, 0.4);
+   display: flex;
+   height: 170px;
+   justify-content: center;
+   align-items: center;
+    width: 100%;
+    text-align: center;
+}
+.img-block p{
+    font-size: 50px;
+    font-weight: 300;
+}
+.logo{
+    background: url(odin-lined.png);
+  
+    background-size: cover;
+    width: 100px;
+    height:120px;
+    color: white;
+    
 }
 button.create{
     padding: 0.8rem 1.3rem;
@@ -58,6 +122,13 @@ button.create{
     color: white;
     letter-spacing: -1px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.253);
+    margin-top: 8px;
+}
+.create:hover{
+    background-color:blueviolet;
+}
+.create:active{
+    background-color: aqua;
 }
 a{
     text-decoration: none;
