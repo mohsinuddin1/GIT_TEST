@@ -33,18 +33,19 @@ body{
     flex-direction: column;
 }
 .footer{
-    background-color: rgb(44, 139, 44);
+    background-color: rgb(18, 17, 17);
     display:flex;
     width:100%;
     height:40px;
     justify-content: center;
     align-items: center;
     padding: 10px;
+  
 }
 p{
     font-size: 20px;
     font-weight: 600;
-    color: rgb(4, 4, 4);
+    color: rgb(255, 255, 255);
 }
 .btn{
     border: none;
@@ -91,4 +92,29 @@ p{
 .msg{
     color: aqua;
     font-size: 32px;
+}
+/* For screens smaller than 768px (typical mobile devices) */
+@media (max-width: 768px) {
+    .grid {
+        width: 80vw; /* Adjust the width for mobile devices */
+         /* Allow height to adjust based on content */
+         gap:5px;
+         height:350px;
+    }
+    .field {
+        width: 32%; /* Adjust width of fields */
+        height: 32%; /* Allow height to adjust based on content */
+        font-size: 32px;
+         /* Decrease font size for smaller screens */
+    }
+    .logo {
+        font-size: 28px; /* Decrease font size for logo */
+    }
+    .btn {
+        font-size: 16px; /* Decrease font size for buttons */
+    }
+    .footer {
+        height: 30px; /* Adjust height of footer */
+    }
+
 }
