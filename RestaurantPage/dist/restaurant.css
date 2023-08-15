@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    padding: 0 ;
+}
+.header{
+    background-color: rgba(0, 0, 0, 0.552);
+    text-align: center;
+    font-size:40px;
+    padding: 10px;
+}
+.button-nav{
+    border: none;
+    border-bottom: 4px solid transparent;
+    padding:15px;
+    transition:transform 0.3s;
+}
+.button-nav:hover{
+    background-color: aqua;
+   
+    transform: translateY(-10%);
+}
+.button-nav.active{
+    border-bottom: 10px;
+   border-color: blue;
+}
