@@ -1,0 +1,166 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color:  rgb(20, 89, 89);
+   
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px ;
+    background-color: rgb(20, 89, 89);
+    color: white;
+    
+}
+.logo{
+    font-size: 32px;
+    font-weight: 800;
+   
+    
+}
+.material-icon{
+    font-family:'Material Icons Round';
+   
+}
+.mode{
+    width:40px;
+    height: 40px;
+   border-radius: 50%;
+}
+.hidden {
+    top: 0;
+    left: 0;
+    pointer-events: none !important;
+    position: absolute !important;
+    max-height: 0 !important;
+    transition: max-height 1s ease-out !important;
+    opacity: 0 !important;
+   
+}
+.rightPanel{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.leftpanel{
+    width: 20%;
+}
+.head{
+    color: black;
+    margin: 8px;
+   
+    font-size: 28px;
+    font-weight:800;
+    margin-top: 20px;
+    text-align: left;
+  
+    width:80%;
+    
+}
+.container{
+    min-height:500px;
+    width:380px;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.form{
+    border-radius: 30px;
+    border-color: rgb(191, 183, 183);
+    padding-left: 5px;
+    font-size: 15px;
+    
+   background-color: rgb(203, 196, 196);
+    width:320px;
+    display: flex;
+   
+    align-items: center;
+    margin-top: 15px;
+  
+    
+}
+
+.addbtn:hover{
+    background-color: rgb(192, 149, 70);
+}
+.addbtn:active{
+    background-color: rgb(27, 108, 108);
+}
+.addbtn{
+    padding: 5px;
+    font-size: 15px;
+    border:none;
+    margin-left: 0;
+    width:80px;
+    background-color: orange;
+    height: 40px;
+    border-radius: 30px;
+    margin-right: 0;
+}
+.input{
+    border:none;
+    flex: 1;
+    border-color: rgb(191, 183, 183);
+    padding: 5px;
+    font-size: 15px;
+    width:220px;
+    outline: none;
+    background: transparent;
+    
+}
+.list{
+    width:86%;
+    min-height: 300px;
+   position: relative;
+    margin-top: 20px;
+   list-style: none;
+}
+
+ul li{
+    
+    display: flex;
+    justify-content: flex-start;
+    line-height: 4px;
+   
+}
+.checked{
+    background-color: green;
+}
+.lineThrough {
+    text-decoration: line-through;
+}
+.fade{
+    opacity: 0.7;
+}
+li div{
+position: absolute;
+  margin-top: 8px;
+   right: 15px;
+   height:25px;
+   width: 25px;
+   background-image: url(./cross.png);
+   background-size: cover;
+  
+}
+.list-details{
+    font-weight:500;
+    font-size: 20px;
+}
+
+.dark{
+    background-color: rgb(54, 48, 48);
+    color: white;
+    .head{
+        color: white;
+    }
+   
+}
+.dark-mode{
+    background-color: rgb(0, 0, 0);
+}
