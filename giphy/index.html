@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giphy</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgb(18, 65, 103);
+        }
+
+        img {
+            width: 500px;
+            height: 500px;
+            border: 50px;
+            border-color: rgb(205, 30, 30);
+            border-radius: 4px;
+            background-color: rgb(51, 49, 49);
+        }
+
+        .btn {
+            background-color: aqua;
+            padding: 5px;
+            border-radius: 8px;
+
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn:hover {
+            background-color: blueviolet;
+        }
+
+        .input {
+            border-radius: 8px;
+            width: 250px;
+            height: 20px;
+            margin: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <img alt="this is Giphy"="#">
+    <div class="box">
+        <input class="input" type="text" placeholder="enter the gif name">
+        <button class="btn"> search</button>
+    </div>
+    <script>
+        const btn = document.querySelector(".btn");
+        const input = document.querySelector(".input");
+        btn.addEventListener('click', (e) => {
+            console.log(`${input.value}`);
+            giphyFetcher(input);
+        })
+
+        async function giphyFetcher(input) {
+            const img = document.querySelector('img');
+            const response=await fetch(`https://api.giphy.com/v1/gifs/translate?api_key=JcVXXtzrt0SX0sbibRZKQJ21zvJPUEsr&s=${input.value}`, { mode: 'cors' });
+            const fetchdata=await response.json();
+            img.src = fetchdata.data.images.original.url;  
+            input.value = "";
+        }
+
+    </script>
+</body>
+
+</html>

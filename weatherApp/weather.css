@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("./cloud2.jpg");
+    background-size: cover;
+}
+.title{
+font-size: 42px;
+background-color: black;
+border-radius: 25px;
+color:white;
+padding: 10px;
+width: 190px;
+text-align: center;
+margin:10px
+
+}
+.header{
+    display: flex;
+    justify-content: center;
+}
+.main{
+    display: flex;
+   
+    flex-direction: column;
+    align-items: center;
+}
+.box{
+    margin: 20px;
+}
+.input{
+    background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-bottom: 2px;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 4px;
+  text-align: center;
+}
+.btn{
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-bottom: 2px;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 4px;
+    text-align: center;
+}
+.btn:hover{
+    background-color:rgb(68, 68, 143);
+}
+.btn:active{
+    background-color: blueviolet;
+}
+.card.active{
+    min-width: 250px;
+    max-width: 320px;
+   margin:2rem auto;
+   padding: 2rem;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+}
+.img{
+    width:100%;
+    max-height: 250px;
+}
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    body{
+        background-size: auto;
+    }
+    .title {
+        font-size: 32px;
+        width: 160px;
+    }
+    
+    .input,
+    .btn {
+        font-size: 18px;
+        padding: 3px;
+    }
+    
+    .card.active {
+        font-size: 1.2rem;
+        padding: 1.5rem;
+    }
+}
