@@ -1,0 +1,63 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-image: url('./assets/bg2.jpg');
+  background-size: cover;
+  color: rgb(0, 255, 247);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   height: 100vh;
+ 
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Darkens the background */
+  z-index: -1; /* Places the overlay below other content */
+}
+.header{
+ 
+  font-size: 32px;
+  text-align: center;
+}
+.footer{
+  display: flex;
+  justify-content: center;
+}
+.cards{
+  display: flex;
+  flex-flow: wrap;
+  gap: 20px;
+
+}
+.card{
+  /* width: 150px;
+  height: 200px; */
+  width: 200px;
+  height:200px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+  background-color: rgb(0, 31, 58);
+  border-radius: 20px;
+  padding: 5px;
+  flex-direction: column;
+}
+img{
+  width: 100%;
+  height: 90%;
+ 
+ object-fit: contain;
+}
+.footer{
+  position: absolute;
+  bottom: 0;
+  right: 40%;
+}

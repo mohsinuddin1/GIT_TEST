@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-custom-image {
+    background-image: url("../src/assets/mainImg.jpg");
+    background-size: cover; /* You can adjust this property */
+    /* Add more CSS properties here as needed */
+  }

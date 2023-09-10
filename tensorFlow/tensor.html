@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tensorBaby.js</title>
+</head>
+<body>
+  <div>
+    <img src="/dog1.jpg" id="cay"></img>
+   <h1 id="head"></h1>
+
+  </div>
+  <div>
+   <img src="/comp.jpg" id="cay1"></img>
+   <h1 id="head1"></h1>
+  </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.1"> </script>
+    <!-- Load the MobileNet model. -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@1.0.0"> </script>
+    <script>
+        // Notice there is no 'import' statement. 'mobilenet' and 'tf' is
+        // available on the index-page because of the script tag above.
+      
+        const img = document.getElementById('cay');
+        const head=document.getElementById('head');
+        const img1= document.getElementById('cay1');
+        const head1=document.getElementById('head1');
+      
+        // Load the model.
+        mobilenet.load().then(model => {
+          // Classify the image.
+          model.classify(img).then(predictions => {
+            console.log('Predictions: ');
+            console.log(predictions);
+            head.textContent=predictions[0].className;
+
+            
+          });
+        });
+        mobilenet.load().then(model => {
+            model.classify(img1).then(predictions => {
+            console.log('Predictions: ');
+            console.log(predictions);
+            head1.textContent=predictions[0].className+" "+predictions[0].probability;
+            
+          });
+        });
+      </script>
+</body>
+
+</html>
